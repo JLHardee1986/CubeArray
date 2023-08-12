@@ -10,9 +10,9 @@ int main()
 {
 	sf::ContextSettings settings;
 	settings.antialiasingLevel = 8;
-	std::unique_ptr<sf::RenderWindow> upWnd = std::make_unique<sf::RenderWindow>(sf::VideoMode(1280U, 720U, 32U), "Template", sf::Style::None, settings);
+	std::unique_ptr<sf::RenderWindow> upWnd = std::make_unique<sf::RenderWindow>(sf::VideoMode(640U, 480U, 32U), "Template", sf::Style::Fullscreen, settings);
 
-	Cube aCube(sf::Color::Green, { 100.f, 100.f }, { 64U , 64U });
+	Cube aCube(sf::Color::White, { 100.f, 100.f }, { 64U , 64U });
 
 	while (upWnd->isOpen())
 	{
@@ -35,7 +35,7 @@ int main()
 			}
 
 		}
-		upWnd->clear(sf::Color(47, 147, 247, 255));
+		upWnd->clear(sf::Color(sf::Color::Black));
 		upWnd->draw(aCube);
 		upWnd->display();
 	}
