@@ -12,7 +12,7 @@ int main()
 	settings.antialiasingLevel = 8;
 	std::unique_ptr<sf::RenderWindow> upWnd = std::make_unique<sf::RenderWindow>(sf::VideoMode(640U, 480U, 32U), "Template", sf::Style::Fullscreen, settings);
 
-	Cube aCube(sf::Color::White, { 100.f, 100.f }, { 64U , 64U });
+	Cube aCube(sf::Color(0,155,0,255), { 100.f, 100.f }, { 64U , 64U });
 
 	while (upWnd->isOpen())
 	{
