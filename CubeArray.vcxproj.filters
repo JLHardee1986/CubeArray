@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\graphics">
+      <UniqueIdentifier>{c5e2ebed-020b-4942-b3a3-172cb2c52882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\graphics\GUI">
+      <UniqueIdentifier>{c57aeb67-bfc1-4084-88b6-ec836718e1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\graphics\GUI\textbox">
+      <UniqueIdentifier>{16e93725-07f5-4b3e-b36c-df894d9bdfd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\fonts">
+      <UniqueIdentifier>{a414f443-d0a9-4ea4-beab-85203f41775f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -23,5 +35,18 @@
     <ClInclude Include="Cube.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Textbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="graphics\GUI\textbox\brassy_frame.png">
+      <Filter>Resource Files\graphics\GUI\textbox</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="fonts\Roboto.ttf">
+      <Filter>Resource Files\fonts</Filter>
+    </Font>
   </ItemGroup>
 </Project>
